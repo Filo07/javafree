@@ -1,4 +1,23 @@
-/* gör rutan till fullscreen-overlay */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#btn {
+  font-size: 24px;
+  cursor: pointer;
+  position: fixed;
+  top: 44%;
+  left: 44.5%;
+  z-index: 1000;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVCMB55_4qe2Bpx3hS4KWhpkI_4n760SdQ1g&sS");
+  height: 200px;
+  width: 220px;
+  
+}
+
 #ruta {
   position: fixed;
   top: 0;
@@ -6,14 +25,15 @@
   width: 100vw;
   height: 100vh;
   background: black;
-  display: none; /* styrs via klasserna */
-  z-index: 9999; /* ovanpå allt */
-}
-
-#ruta.synlig {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 999;
+  visibility: hidden;
+}
+
+#ruta.synlig {
+  visibility: visible;
 }
 
 #player {
