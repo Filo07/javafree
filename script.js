@@ -2,9 +2,9 @@ let player;
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
-    videoId: 'dQw4w9WgXcQ', // <-- byt till ditt video-ID
+    videoId: 'dQw4w9WgXcQ', // <-- byt till ditt YouTube-ID
     playerVars: {
-      autoplay: 0,  // vi styr själva när den startar
+      autoplay: 0,
       controls: 1,
       rel: 0
     }
@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
     btn.classList.remove("synlig");
     btn.classList.add("osynlig");
 
-    // Spela video MED ljud
     if (player) {
       player.unMute();
       player.playVideo();
