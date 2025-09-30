@@ -1,0 +1,29 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  display:grid;
+  place-content:center;
+  height:100vh;
+  
+}
+
+div{
+  display:grid;
+  place-content:center;
+  width:400px;
+  height:200px;
+  background:#0002;
+  
+}
+.synlig{
+  display:grid;
+}
+.osynlig{
+  display:none;
+}
+#ruta{
+  background:#090;
+}
